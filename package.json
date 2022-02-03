@@ -1,4 +1,11 @@
 {
   "name": "equalizer-landing-page",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/pages/*.html",
+    "build": "parcel build src/pages/*.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
 }
