@@ -1,0 +1,41 @@
+.c-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6.1rem;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  letter-spacing: -0.018rem;
+  border-radius: 1.2rem;
+  font: normal 700 1.8rem/178% $font-family;
+}
+
+.c-button + .c-button {
+  margin-top: 1.6rem;
+}
+
+.c-button--light {
+  color: $color-eerie-black;
+  background-color: $color-snow;
+
+  &:hover {
+    color: $color-snow;
+    background-color: $color-rajah;
+  }
+}
+
+.c-button--dark {
+  color: $color-snow;
+  background-color: $color-eerie-black;
+
+  &:hover {
+    color: $color-eerie-black;
+    background-color: $color-sky-blue;
+  }
+}
+
+.c-button__icon {
+  margin-right: 0.8rem;
+}

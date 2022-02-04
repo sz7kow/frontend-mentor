@@ -4,7 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Frontend mentor challenge solution." />
+    <title>Equalizer landing page</title>
+    <link rel="stylesheet" href="../assets/styles/styles.scss" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon_32x32.png" />
   </head>
-  <body></body>
+  <body>
+    <header class="o-container c-header">
+      <img src="../assets/svgs/logo.svg" alt="Equalizer's logo" width="146" height="32" />
+    </header>
+    <main>
+      <div class="o-container">
+        <div class="c-intro">
+          <h1 class="c-intro__header">We make your music sound extraordinary.</h1>
+          <p class="c-intro__content">
+            A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds
+            with a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb,
+            and more!
+          </p>
+        </div>
+      </div>
+      <div class="o-container">
+        <div class="c-card-container">
+          <div class="c-card-container__inner-container">
+            <div class="c-card">
+              <h2 class="c-card__title">Premium EQ</h2>
+              <p class="c-card__content">
+                Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take your listening
+                experience to a whole new level and access all our incredible features!
+              </p>
+              <div class="c-card__details">
+                <p class="c-card__price-container">
+                  <span class="c-card__price-value">$4</span>
+                  <span class="c-card__price-label">/ month</span>
+                </p>
+                <button class="c-button c-button--dark">
+                  <img class="c-button__icon" src="../assets/svgs/icon_apple.svg" alt="Apple icon" />
+                  <span> iOS Download</span>
+                </button>
+                <button class="c-button c-button--light">
+                  <img class="c-button__icon" src="../assets/svgs/icon_android.svg" alt="Android icon" />
+                  <span>Android Download</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="o-container c-footer">
+      <img class="c-footer__logo" src="../assets/svgs/logo.svg" alt="Equalizer" width="146" height="32" />
+      <div class="c-footer__content-container">
+        <p class="c-footer__content">
+          <span class="c-footer__copyrights">All rights reserved © Equalizer 2021</span>
+          Have any problems? Contact us via social media or email us at
+          <span class="c-footer__email">equalizer@example.com</span>
+        </p>
+        <div class="c-footer__icons-container">
+          <img class="c-footer__icon" src="../assets/svgs/icon_facebook.svg" alt="Facebook icon" />
+          <img class="c-footer__icon" src="../assets/svgs/icon_instagram.svg" alt="Instagram icon" />
+          <img class="c-footer__icon" src="../assets/svgs/icon_twitter.svg" alt="Twitter icon" />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

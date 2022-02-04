@@ -1,0 +1,66 @@
+.c-card {
+  padding: 4.8rem 3.7rem 4.8rem 3.6rem;
+  color: $color-snow;
+  border-radius: 1.2rem;
+  background-color: $color-outrageous-orange;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 4.8rem 4.9rem 4.8rem 4.8rem;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+  }
+}
+
+.c-card__title {
+  margin-bottom: 1.2rem;
+  font: normal 700 3.2rem/125% $font-family;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 2.2rem;
+    font-size: 4rem;
+    line-height: 130%;
+  }
+}
+
+.c-card__content {
+  margin-bottom: 3.6rem;
+  font: normal 400 1.8rem/156% $font-family;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 3.9rem;
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+}
+
+.c-card__details {
+  margin-left: 0.6rem;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-left: 0;
+  }
+}
+
+.c-card__price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  color: $color-snow;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 4.6rem;
+  }
+}
+
+.c-card__price-value {
+  font: normal 700 6.5rem/80% $font-family;
+}
+
+.c-card__price-label {
+  margin-left: 1.6rem;
+  letter-spacing: -0.02rem;
+  font: normal 400 2rem/160% $font-family;
+}

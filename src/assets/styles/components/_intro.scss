@@ -1,0 +1,48 @@
+.c-intro {
+  padding: 0 2.4rem 6.8rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 0 0.6rem 11.1rem;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0 0 10.8rem;
+  }
+}
+
+.c-intro__header {
+  margin-bottom: 2rem;
+  letter-spacing: -0.045rem;
+  font: normal 700 4rem/120% $font-family;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 52rem;
+    margin-bottom: 2.8rem;
+    letter-spacing: -0.073rem;
+    font-size: 6.4rem;
+    line-height: 100%;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 101.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: -0.1rem;
+    font-size: 8.8rem;
+  }
+}
+
+.c-intro__content {
+  font: normal 400 1.6rem/162% $font-family;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 51.4rem;
+    font-size: 1.8rem;
+    line-height: 156%;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 82.5rem;
+    font-size: 2rem;
+    line-height: 170%;
+  }
+}

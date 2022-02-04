@@ -1,0 +1,11 @@
+.c-header {
+  padding: 4rem 2.4rem 6.4rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 6.2rem 0.6rem 9.5rem;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 6.2rem 0.1rem 12.7rem;
+  }
+}
