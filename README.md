@@ -13,7 +13,7 @@ A collection of solutions for Frontend Mentor challenges.
 ### The challenges
 
 1. Newbie
-  - [Order summary component](https://github.com/sz7kow/order-summary-component)
+   - [Order summary component](https://github.com/sz7kow/order-summary-component)
 3. Junior
 4. Intermediate
 5. Advanced
