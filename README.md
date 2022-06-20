@@ -5,12 +5,12 @@ A collection of solutions for Frontend Mentor challenges.
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenges](#the-challenges)
+  - [Solutions](#solutions)
 - [Author](#author)
 
 ## Overview
 
-### The challenges
+### Solutions
 
 1. Newbie
    - [Order summary component](https://github.com/sz7kow/order-summary-component)
