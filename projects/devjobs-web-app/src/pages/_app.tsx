@@ -7,6 +7,9 @@ import {DEFAULT_THEME} from '~theming/constants/default-theme';
 
 import 'core/styles/reset.sass';
 
+/* -------------------------------------------------------------------------- */
+/*                                 Application                                */
+/* -------------------------------------------------------------------------- */
 const Application: NextPage<AppProps> = props => {
   const {Component, pageProps} = props;
 
@@ -18,4 +21,5 @@ const Application: NextPage<AppProps> = props => {
   );
 };
 
+// eslint-disable-next-line import/no-default-export
 export default Application;

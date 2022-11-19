@@ -1,5 +1,8 @@
 import {Html, Head, Main, NextScript} from 'next/document';
 
+/* -------------------------------------------------------------------------- */
+/*                                  Document                                  */
+/* -------------------------------------------------------------------------- */
 const Document: React.FC = () => (
   <Html>
     <Head>
@@ -14,4 +17,5 @@ const Document: React.FC = () => (
   </Html>
 );
 
+// eslint-disable-next-line import/no-default-export
 export default Document;
