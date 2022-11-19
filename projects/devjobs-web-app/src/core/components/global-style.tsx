@@ -1,6 +1,9 @@
 import {createGlobalStyle} from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+/* -------------------------------------------------------------------------- */
+/*                                Global Style                                */
+/* -------------------------------------------------------------------------- */
+export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${({theme}) => theme.palette.background.primary};
     font-family: ${({theme}) => theme.typography.fontFamily};
@@ -45,5 +48,3 @@ const GlobalStyle = createGlobalStyle`
     color: ${({theme}) => theme.palette.typography.title};
   }
 `;
-
-export {GlobalStyle};
