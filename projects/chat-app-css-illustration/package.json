@@ -15,10 +15,13 @@
   "scripts": {
     "build": "parcel build src/index.html --dist-dir build",
     "dev": "parcel src/index.html --dist-dir build",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "cd ../.. && husky install ./projects/chat-app-css-illustration/.husky"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.8.0",
+    "husky": "8.0.2",
+    "lint-staged": "13.0.3",
     "parcel": "2.8.0",
     "prettier": "2.7.1"
   },
