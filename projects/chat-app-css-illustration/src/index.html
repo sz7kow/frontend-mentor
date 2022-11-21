@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a solution to the 'Chat app CSS illustration' challenge." />
+    <link href="./sass/styles.sass" rel="stylesheet" />
+    <link href="./images/avatar-sz7kow.png" rel="shortcut icon" type="image/x-icon" />
+    <title>Chat app CSS illustration</title>
+  </head>
+  <body>
+    <main class="o-main">
+      <div class="c-phone">
+        <div class="c-phone-inner-container">
+          <div class="c-phone-header">
+            <div class="c-phone-control-panel">
+              <img alt="Chevron left" src="./svgs/icon-chevron-left.svg" />
+              <img alt="Avatar" class="c-phone-avatar" src="./images/avatar-samuel-green.jpg" />
+              <div class="c-phone-user-details">
+                <p class="c-phone-username">Samuel Green</p>
+                <p class="c-phone-status">Available to Walk</p>
+              </div>
+            </div>
+            <div class="c-hamburger">
+              <div class="c-hamburger-dot"></div>
+              <div class="c-hamburger-dot"></div>
+              <div class="c-hamburger-dot"></div>
+            </div>
+          </div>
+          <div class="c-phone-main-content">
+            <ul class="c-messages">
+              <li class="c-message c-message--recieved c-message--text">That sounds great. I'd be happy with that.</li>
+              <li class="c-message c-message--recieved c-message--text">
+                Could you send over some pictures of your dog, please?
+              </li>
+              <li class="c-message c-message--sent c-message--media">
+                <ul class="c-message-images">
+                  <li class="c-message-image-container">
+                    <img alt="Sent image" class="c-message-image" src="./images/image-dog-1.jpg" />
+                  </li>
+                  <li class="c-message-image-container">
+                    <img alt="Sent image" class="c-message-image" src="./images/image-dog-2.jpg" />
+                  </li>
+                  <li class="c-message-image-container">
+                    <img alt="Sent image" class="c-message-image" src="./images/image-dog-3.jpg" />
+                  </li>
+                </ul>
+              </li>
+              <li class="c-message c-message--sent c-message--text">Here are a few pictures. She's a happy girl!</li>
+              <li class="c-message c-message--sent c-message--text">Can you make it?</li>
+              <li class="c-message c-message--recieved c-message--text">
+                She looks so happy! The time we discussed works. How long shall I take her out for?
+              </li>
+              <li class="c-message c-message--recieved c-message--special">
+                <div class="c-order">
+                  <div class="c-order-mark"></div>
+                  <p class="c-order-task">30 minute walk</p>
+                  <p class="c-order-price">$29</p>
+                </div>
+              </li>
+              <li class="c-message c-message--recieved c-message--special">
+                <div class="c-order">
+                  <div class="c-order-mark"></div>
+                  <p class="c-order-task">1 hour walk</p>
+                  <p class="c-order-price">$49</p>
+                </div>
+              </li>
+            </ul>
+            <div class="c-send-message">
+              <p class="c-send-message-text">Type a message…</p>
+              <div class="c-send-message-btn">
+                <img alt="Chevron right" class="c-send-message-chevron" src="./svgs/icon-chevron-right.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-intro">
+        <h1 class="c-intro-heading">Simple booking</h1>
+        <p class="c-intro-text">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and
+          make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
