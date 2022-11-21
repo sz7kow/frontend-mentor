@@ -15,6 +15,7 @@ A collection of solutions to the Frontend Mentor challenges.
 1. Newbie
 2. Junior
 3. Intermediate
+   - [Chat app CSS illustration](https://github.com/sz7kow/frontend-mentor/tree/master/projects/chat-app-css-illustration)
 4. Advanced
 5. Guru
 
