@@ -3,6 +3,7 @@ export interface JobOfferDetails {
   description: string;
   contract: string;
   location: string;
+  applyUrl: string;
   requirements: {
     content: string;
     items: string[];

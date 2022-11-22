@@ -1,6 +1,7 @@
-import {Button} from 'common/components/button';
+import Link from 'next/link';
 import styled from 'styled-components';
 
+import {Button} from 'common/components/button';
 import {JobOfferDetails} from '~job-offers/types/job-offer-details';
 
 /* -------------------------------------------------------------------------- */
@@ -152,35 +153,40 @@ interface Props {
   details: JobOfferDetails;
 }
 
-const JobOfferDetailsCard: React.FC<Props> = ({createdAt, details}) => (
+const JobOfferDetailsCard: React.FC<Props> = ({
+  createdAt,
+  details: {applyUrl, contract, description, location, position, requirements, role},
+}) => (
   <Container>
     <Header>
       <Details>
         <Metadata>
           <span>{createdAt}</span>
-          <span>{details.contract}</span>
+          <span>{contract}</span>
         </Metadata>
-        <Position>{details.position}</Position>
-        <Location>{details.location}</Location>
+        <Position>{position}</Position>
+        <Location>{location}</Location>
       </Details>
-      <Button>Apply Now</Button>
+      <Link href={applyUrl}>
+        <Button>Apply Now</Button>
+      </Link>
     </Header>
     <MainContent>
-      <p>{details.description}</p>
+      <p>{description}</p>
       <Section>
         <h2>Requirements</h2>
-        <p>{details.requirements.content}</p>
+        <p>{requirements.content}</p>
         <ul>
-          {details.requirements.items.map(item => (
+          {requirements.items.map(item => (
             <li key={item}>{item}</li>
           ))}
         </ul>
       </Section>
       <Section>
         <h2>What You Will Do</h2>
-        <p>{details.role.content}</p>
+        <p>{role.content}</p>
         <ol>
-          {details.role.items.map(item => (
+          {role.items.map(item => (
             <li key={item}>{item}</li>
           ))}
         </ol>

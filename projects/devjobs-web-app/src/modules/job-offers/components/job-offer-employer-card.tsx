@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {Button} from 'common/components/button';
+import {slugify} from 'common/utils/slugify';
+import Link from 'next/link';
 import {JobOfferEmployer} from '~job-offers/types/job-offer-employer';
 
 /* -------------------------------------------------------------------------- */
@@ -113,11 +115,13 @@ export const JobOfferEmployerCard: React.FC<Props> = ({
     <Content>
       <Details>
         <Company>{company}</Company>
-        <Website>{websiteUrl}</Website>
+        <Website>{`${slugify(company)}.com`}</Website>
       </Details>
-      <Button spacing="small" variant="subtile">
-        Company Site
-      </Button>
+      <Link href={websiteUrl}>
+        <Button spacing="small" variant="subtile">
+          Company Site
+        </Button>
+      </Link>
     </Content>
   </Container>
 );

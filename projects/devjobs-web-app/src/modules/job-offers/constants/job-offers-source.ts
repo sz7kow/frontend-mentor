@@ -5,7 +5,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '1',
     employer: {
       company: 'Scoot',
-      websiteUrl: 'scoot.com',
+      websiteUrl: 'https://example.com/scoot',
       logo: {
         source: '/assets/svgs/logo-scoot.svg',
         backgroundColor: '#ea9310',
@@ -17,7 +17,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'Scoot is looking for a Senior Software Engineer passionate about building approachable, innovative and user-first experiences to join our small but growing Engineering team. You will be responsible for building and maintaining front end functionality across all of Scoot’s applications, fostering a growing team of software engineers, and helping drive and maintain best software patterns and practices in our codebase.',
       contract: 'Full Time',
       location: 'United Kingdom',
-
+      applyUrl: 'https://example.com/scoot/apply',
       requirements: {
         content:
           'The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.',
@@ -47,7 +47,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '2',
     employer: {
       company: 'Blogr',
-      websiteUrl: 'blogr.com',
+      websiteUrl: 'https://example.com/blogr',
       logo: {
         source: '/assets/svgs/logo-blogr.svg',
         backgroundColor: '#e54b24',
@@ -59,7 +59,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'Blogr is looking for a part-time developer to join our six-strong team of full-stack engineers. Our core development values are strong, static typing and correctness, rigorous automation (in both testing and infrastructure) and everyone having a say.',
       contract: 'Part Time',
       location: 'United States',
-
+      applyUrl: 'https://example.com/blogr/apply',
       requirements: {
         content:
           'We are looking to carefully add great developers which care about solving problems & which have been in a relationship with Purescript and/or Haskell for at least 3 years (Not necessarily monogamous though).',
@@ -89,7 +89,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '3',
     employer: {
       company: 'Vector',
-      websiteUrl: 'vector.com',
+      websiteUrl: 'https://example.com/vector',
       logo: {
         source: '/assets/svgs/logo-vector.svg',
         backgroundColor: '#353641',
@@ -101,6 +101,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We are looking for a Mid-level Back End Engineer to join our growing software engineering organization. The right person will help move our platform to the next level. You’ll be working as part of a skilled, collaborative team to jointly design and implement high visibility applications.',
       contract: 'Part Time',
       location: 'Russia',
+      applyUrl: 'https://example.com/vector/apply',
       requirements: {
         content:
           'As our ideal candidate, you have previous experience in Ruby on Rails and are eager to continue to develop professionally. You work well in an agile environment, and collaborate well with other Software Engineers, Test Automation Engineers, Product Managers, and Designers. You thrive in a fast-paced environment, and are able to adapt when needed.',
@@ -129,7 +130,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '4',
     employer: {
       company: 'Office Lite',
-      websiteUrl: 'officelite.com',
+      websiteUrl: 'https://example.com/officelite',
       logo: {
         source: '/assets/svgs/logo-officelite.svg',
         backgroundColor: '#2f4fc6',
@@ -141,6 +142,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'Office Lite is seeking a talented and enthusiastic Senior Application Engineer whose primary responsibility is software architecture and development for Office Lite systems. Additional responsibilities include participation in project time/task estimation, code and architecture reviews, providing support for junior developers, documentation of system architecture and a supporting role for all phases of the development life-cycle (project definition, process mapping, architecture, coding, acceptance testing, installation, turnover to support, etc.).',
       contract: 'Full Time',
       location: 'Japan',
+      applyUrl: 'https://example.com/officelite/apply',
       requirements: {
         content:
           'As a hands-on subject matter expert, you will use expert-level engineering knowledge to provide technical support and help translate customer requirements into exciting new product features. You will be working within multi-disciplinary teams to create pervasive simulation solutions, advance your industry knowledge, and grow the business impact.​',
@@ -171,7 +173,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '5',
     employer: {
       company: 'Pod',
-      websiteUrl: 'pod.com',
+      websiteUrl: 'https://example.com/pod',
       logo: {
         source: '/assets/svgs/logo-pod.svg',
         backgroundColor: '#132034',
@@ -183,7 +185,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'Join our dynamic team in developing Pod’s core products and supporting infrastructure. Our software is currently written in Java, VB.Net, React Native, React JS and others. You will help lead new initiatives to build and improve the testing, staging and deployment solutions. You will interact with all development teams, development leadership and our hosting/IT staff to define requirements and goals for the Dev Ops Platform.',
       contract: 'Part Time',
       location: 'Japan',
-
+      applyUrl: 'https://example.com/pod/apply',
       requirements: {
         content:
           'We are looking for talented and motivated engineers who can hit the ground running and take our products to the next level. The engineers who are building our platform across the stack are always willing to go the extra mile to deliver the highest quality software and client experiences. Ideally, you would have:',
@@ -216,7 +218,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '6',
     employer: {
       company: 'Creative',
-      websiteUrl: 'creative.com',
+      websiteUrl: 'https://example.com/creative',
       logo: {
         source: '/assets/svgs/logo-creative.svg',
         backgroundColor: '#4e1853',
@@ -228,6 +230,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'Creative is seeking a Desktop Support Manager responsible for managing and leading a high-performance team in a dynamic environment. The ideal candidate should have management experience, a strong technical skillset, exceptional client service skills and enjoy mentoring a team.',
       contract: 'Part Time',
       location: 'Germany',
+      applyUrl: 'https://example.com/creative/apply',
       requirements: {
         content:
           'You are likely someone with a solid background in end-user support and troubleshooting, as this position involves dealing with a large, and often changing, number of day-to-day issues which arise in supporting the information technology requirements of our applications.',
@@ -260,7 +263,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '7',
     employer: {
       company: 'Pomodoro',
-      websiteUrl: 'pomodoro.com',
+      websiteUrl: 'https://example.com/pomodoro',
       logo: {
         source: '/assets/svgs/logo-pomodoro.svg',
         backgroundColor: '#4721c4',
@@ -272,6 +275,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We are looking for thoughtful, well-rounded iOS engineer to join our team. We’re looking for someone to help build out the foundation of the app and infrastructure. If you are interested in taking part in building an application that millions of people use every day to increase their productivity, this is the perfect opportunity. You will play an important part in our mobile engineering practice, implementing new features, improving performance, and building beautiful user interfaces.',
       contract: 'Full Time',
       location: 'United States',
+      applyUrl: 'https://example.com/pomodoro/apply',
       requirements: {
         content:
           'You are an experienced mobile engineer looking to make Pomodoro one of the best mobile experiences out there. You are someone who excels at customer-centric product development and has a passion for working on application architecture and design, and making smooth, delightful experiences. You care deeply about quality, are energized by partnership and collaboration, and you strive to enable others around you to excel.',
@@ -301,7 +305,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '8',
     employer: {
       company: 'Maker',
-      websiteUrl: 'maker.com',
+      websiteUrl: 'https://example.com/maker',
       logo: {
         source: '/assets/svgs/logo-maker.svg',
         backgroundColor: '#21437d',
@@ -313,6 +317,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We are seeking an experienced EJB Developer who will join our fast-growing engineering team, working on mission-critical applications. Searching for a Senior Java Developer who thrives on working with enterprises in multiple industries with unique business challenges requiring sophisticated solution design.',
       contract: 'Full Time',
       location: 'United Kingdom',
+      applyUrl: 'https://example.com/maker/apply',
       requirements: {
         content:
           'The candidate must have work experience in all aspects of designing and constructing J2EE/EJB systems and developing system requirements and design specifications, and J2EE/EJB Coding for new and existing applications.',
@@ -342,7 +347,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '9',
     employer: {
       company: 'Coffeeroasters',
-      websiteUrl: 'coffeeroasters.com',
+      websiteUrl: 'https://example.com/coffeeroasters',
       logo: {
         source: '/assets/svgs/logo-coffeeroasters.svg',
         backgroundColor: '#f2ddca',
@@ -354,6 +359,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We’re looking for an experienced Frontend Developer with an eye for Product Design along with a honed set of coding skills and who shares our values around technology. Most importantly, we’d like someone who is collaborative and can work closely with the rest of our team shaping product.',
       contract: 'Part Time',
       location: 'Singapore',
+      applyUrl: 'https://example.com/coffeeroasters/apply',
       requirements: {
         content:
           'You will be responsible for executing high quality solutions for customers and contributing to the day-to-day technical excellence of a delivery team. You should have a deep understanding of Modern JavaScript, HTML and CSS, the software development life cycle, and possess the ability to implement and execute standard software architecture patterns.',
@@ -383,7 +389,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '10',
     employer: {
       company: 'Mastercraft',
-      websiteUrl: 'mastercraft.com',
+      websiteUrl: 'https://example.com/mastercraft',
       logo: {
         source: '/assets/svgs/logo-mastercraft.svg',
         backgroundColor: '#1f1f1f',
@@ -395,7 +401,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'Mastercraft is looking for a UX/UI Designer to turn our software into easy-to-use products for our clients. Responsibilities include gathering user requirements, designing graphic elements and building software component',
       contract: 'Freelance',
       location: 'United States',
-
+      applyUrl: 'https://example.com/mastercraft/apply',
       requirements: {
         content:
           'To be successful in this role, you should have experience with design software and wireframe tools preferably Figma. You should also have a portfolio of professional design projects that includes work with web/mobile applications.',
@@ -427,7 +433,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '11',
     employer: {
       company: 'Crowdfund',
-      websiteUrl: 'crowdfund.com',
+      websiteUrl: 'https://example.com/crowdfund',
       logo: {
         source: '/assets/svgs/logo-crowdfund.svg',
         backgroundColor: '#37c890',
@@ -439,6 +445,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'Crowdfund is currently expanding and working on revolutionizing the world of raising funds for any project – creative, entrepreneurial or cause-related. Come and join us in this growth! We are looking for an exceptionally talented Fullstack Developer who will become an integral part of the company’s exciting new chapter.',
       contract: 'Part Time',
       location: 'New Zealand',
+      applyUrl: 'https://example.com/crowdfund/apply',
       requirements: {
         content:
           "We'd love to hear from you if you take ownership of your work and continuously want to improve the products you've built. We're looking for developers who have an uncanny abilithy to work very well cross-functionality in a flat startup.",
@@ -470,7 +477,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '12',
     employer: {
       company: 'Typemaster',
-      websiteUrl: 'typemaster.com',
+      websiteUrl: 'https://example.com/typemaster',
       logo: {
         source: '/assets/svgs/logo-typemaster.svg',
         backgroundColor: '#f26818',
@@ -482,6 +489,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We are looking for a talented tech lead to join a team that creates large-scale, highly-performant web applications. This team creates highly visible and responsive user interfaces used by millions of people.',
       contract: 'Part Time',
       location: 'United Kingdom',
+      applyUrl: 'https://example.com/typemaster/apply',
       requirements: {
         content:
           'Our work is not just about the code: we seek a tech lead who cares deeply about user experience and how their work impacts users. An ideal candidate has extensive experience as a full-stack software engineer, including experience with both Django and React/Redux, our stack. This role is perfect for a seasoned full-stack developer who is looking to grow both as an engineer and technical product owner. We want someone who takes the initiative to learn, enjoys thoughtful code review, and has a history collaborating with other software engineers to develop best patterns and practices.',
@@ -512,7 +520,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '13',
     employer: {
       company: 'Crowdfund',
-      websiteUrl: 'crowdfund.com',
+      websiteUrl: 'https://example.com/crowdfund',
       logo: {
         source: '/assets/svgs/logo-crowdfund.svg',
         backgroundColor: '#37c890',
@@ -524,7 +532,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We’re hiring a Front-end Developer to help create the front-end experience for Crowdfund’s management interface. As our ideal candidate, you’re an adept user of the front-end stack (React, Yarn, webpack, Babel, SCSS, JSX, GraphQL) and an avid learner of new frameworks. You enjoy building excellent user experiences as well as reusable components that other developers can use to solve similar problems. You love open-source and being part of a thriving developer community and understand that strong businesses enable great enduring communities.',
       contract: 'Full Time',
       location: 'New Zealand',
-
+      applyUrl: 'https://example.com/crowdfund/apply',
       requirements: {
         content:
           'As a mid-level developer, we expect you to have a complete understanding of JavaScript, CSS, and HTML, and proven experience building and deploying single-page applications at scale. Experience with modern JavaScript application frameworks is a given, but you also have the ability to think outside the frameworks.',
@@ -555,7 +563,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '14',
     employer: {
       company: 'Coffeeroasters',
-      websiteUrl: 'coffeeroasters.com',
+      websiteUrl: 'https://example.com/coffeeroasters',
       logo: {
         source: '/assets/svgs/logo-coffeeroasters.svg',
         backgroundColor: '#f2ddca',
@@ -567,6 +575,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We’re looking for a Junior Full-Stack Developer to join our Product and Engineering team. This is an exciting opportunity to work on building our core web application.',
       contract: 'Full Time',
       location: 'Singapore',
+      applyUrl: 'https://example.com/coffeeroasters/apply',
       requirements: {
         content:
           'This is an entry level full stack developer position that will assist in developing the next generation apps and APIs. You will be a contributor to agile teams by providing services that ensure Coffeeroasters is aligning technology efforts with business information needs. The intent is to develop a junior full stack developer to become a well-rounded API developer ready to take on any challenging opportunity.',
@@ -597,7 +606,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
     id: '15',
     employer: {
       company: 'Blogr',
-      websiteUrl: 'blogr.com',
+      websiteUrl: 'https://example.com/blogr',
       logo: {
         source: '/assets/svgs/logo-blogr.svg',
         backgroundColor: '#e54b24',
@@ -609,6 +618,7 @@ const JOB_OFFERS_SOURCE: JobOffer[] = [
         'We’re looking for a Frontend Developer who values user experience, performance and accessibility. Through our enduring interest in how people use our products, Blogr embraces a model of software development that is iterative and gradual. Like high-performance engines, our products are built through a process of continuous refinement (usually on two week release cycles). We’re looking for someone who is comfortable embodying this approach.',
       contract: 'Full Time',
       location: 'United States',
+      applyUrl: 'https://example.com/blogr/apply',
       requirements: {
         content:
           'You will be responsible for writing and debugging your code while writing your own unit tests. We are looking for self-motivated developers who are interested in learning and can quickly pick up new technologies. We’re a relatively small team in a stable yet fast growing company and would love for you to join us.',
