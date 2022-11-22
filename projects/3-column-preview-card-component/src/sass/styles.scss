@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$breakpoint-desktop: 69.375rem;
+
+$color-grey: #f2f2f2;
+$color-cadmium-orange: #e28625;
+$color-dark-green: #004140;
+$color-light-green: #006971;
+$color-white: #ffffff;
+
+$font-primary: 'Lexend Deca', sans-serif;
+$font-secondary: 'Big Shoulders Display', cursive;
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  padding: 5.5rem 1.5rem;
+  background-color: $color-grey;
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 10.6875rem 1.5rem 8.0625rem;
+  }
+}
+
+.card-set {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 20.4375rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    max-width: 57.5rem;
+  }
+}
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem 2.9375rem 3rem 3.0625rem;
+}
+
+.card.is-orange {
+  background-color: $color-cadmium-orange;
+}
+
+.card.is-light-green {
+  background-color: $color-light-green;
+}
+
+.card.is-dark-green {
+  background-color: $color-dark-green;
+}
+
+.card-icon {
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font: 700 2.5rem/3rem $font-secondary;
+  margin-bottom: 1.5625rem;
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+.card-content {
+  font: 400 0.9375rem/1.5625rem $font-primary;
+  margin-bottom: 1.5625rem;
+  color: $color-white;
+  opacity: 0.75;
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 5.1875rem;
+  }
+}
+
+.card-button {
+  font: 400 0.9375rem/1.5625rem $font-primary;
+  width: 9rem;
+  padding: 0.5625rem 0 0.625rem;
+  text-align: center;
+  border: 0.125rem solid $color-white;
+  border-radius: 2rem;
+  background-color: $color-white;
+  transition: 0.1s ease-in-out;
+}
+
+.card-button:hover {
+  color: $color-white;
+  background-color: transparent;
+}
+
+.card.is-orange .card-button {
+  color: $color-cadmium-orange;
+}
+
+.card.is-light-green .card-button {
+  color: $color-light-green;
+}
+
+.card.card.is-dark-green .card-button {
+  color: $color-dark-green;
+}
