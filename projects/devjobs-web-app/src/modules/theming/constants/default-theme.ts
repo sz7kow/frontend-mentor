@@ -2,9 +2,9 @@ import {Theme} from '~theming/types/theme';
 
 const DEFAULT_THEME: Theme = {
   breakpoints: {
-    mobile: '375px',
-    tablet: '768px',
-    desktop: '1440px',
+    mobile: '23.4375rem',
+    tablet: '48rem',
+    desktop: '90rem',
   },
   palette: {
     background: {

@@ -38,10 +38,10 @@ const Details = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  row-gap: 7px;
+  row-gap: 0.4375rem;
 
   @media screen and (min-width: ${({theme}) => theme.breakpoints.tablet}) {
-    row-gap: 4px;
+    row-gap: 0.25rem;
   }
 `;
 
@@ -89,7 +89,7 @@ const MainContent = styled.div`
 
 const Section = styled.div`
   h2 {
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
     font-size: ${({theme}) => theme.typography.h3.fontSize};
     line-height: ${({theme}) => theme.typography.h3.lineHeight};
   }
@@ -115,11 +115,11 @@ const Section = styled.div`
 
     ::before {
       content: '';
-      width: 4px;
-      height: 4px;
-      border-radius: 2px;
+      width: 0.25rem;
+      height: 0.25rem;
+      border-radius: 0.125rem;
       background-color: ${({theme}) => theme.palette.success.primary};
-      transform: translateY(11px);
+      transform: translateY(0.6875rem);
     }
   }
 
@@ -127,7 +127,7 @@ const Section = styled.div`
     counter-reset: ol-counter;
 
     li {
-      column-gap: 28px;
+      column-gap: 1.75rem;
 
       ::before {
         counter-increment: ol-counter;
