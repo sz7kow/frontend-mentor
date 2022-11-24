@@ -118,7 +118,7 @@ export const JobOfferEmployerCard: React.FC<Props> = ({
         <Website>{`${slugify(company)}.com`}</Website>
       </Details>
       <Link href={websiteUrl}>
-        <Button spacing="small" variant="subtile">
+        <Button spacing="small" variant="contrast">
           Company Site
         </Button>
       </Link>
