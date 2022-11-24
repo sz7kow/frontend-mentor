@@ -36,7 +36,7 @@ const DEFAULT_THEME: Theme = {
     h3: {
       fontSize: '1.25rem',
       fontWeight: 700,
-      lineHeight: '1.5625rem',
+      lineHeight: '1.5rem',
     },
     h4: {
       fontSize: '0.875rem',
@@ -47,6 +47,7 @@ const DEFAULT_THEME: Theme = {
       fontSize: '1rem',
       fontWeight: 400,
       lineHeight: '1.625rem',
+      lineHeightAlt: '1.25rem',
     },
     button: {
       fontSize: '1rem',

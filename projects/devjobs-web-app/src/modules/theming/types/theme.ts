@@ -45,6 +45,7 @@ interface Theme {
       fontSize: string;
       fontWeight: string | number;
       lineHeight: string | number;
+      lineHeightAlt: string | number;
     };
     button: {
       fontSize: string;
