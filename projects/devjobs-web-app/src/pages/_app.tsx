@@ -5,11 +5,8 @@ import {ThemeProvider} from 'styled-components';
 import {GlobalStyle} from 'core/components/global-style';
 import {DEFAULT_THEME} from '~theming/constants/default-theme';
 
-import 'core/styles/reset.sass';
+import 'core/scss/reset.scss';
 
-/* -------------------------------------------------------------------------- */
-/*                                 Application                                */
-/* -------------------------------------------------------------------------- */
 const Application: NextPage<AppProps> = props => {
   const {Component, pageProps} = props;
 
