@@ -1,11 +1,35 @@
-import {JobOfferEmployer} from '~job-offers/types/job-offer-employer';
-import {JobOfferDetails} from '~job-offers/types/job-offer-details';
+export interface JobOfferDetails {
+  position: string;
+  description: string;
+  contract: string;
+  location: string;
+  applyUrl: string;
+  requirements: {
+    content: string;
+    items: string[];
+  };
+  role: {
+    content: string;
+    items: string[];
+  };
+}
+
+export interface JobOfferEmployer {
+  company: string;
+  websiteUrl: string;
+  logo: {
+    source: string;
+    backgroundColor: string;
+  };
+}
+
+export interface JobOfferMetadata {
+  createdAt: string;
+}
 
 export interface JobOffer {
-  id: string;
-  employer: JobOfferEmployer;
   details: JobOfferDetails;
-  metadata: {
-    createdAt: string;
-  };
+  employer: JobOfferEmployer;
+  id: string;
+  metadata: JobOfferMetadata;
 }

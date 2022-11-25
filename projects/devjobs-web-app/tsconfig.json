@@ -16,8 +16,9 @@
     "incremental": true,
     "baseUrl": "src",
     "paths": {
-      "~job-offers/*": ["./modules/job-offers/*"],
-      "~theming/*": ["./modules/theming/*"]
+      "common/*": ["./modules/common/*"],
+      "job-offers/*": ["./modules/job-offers/*"],
+      "themes/*": ["./modules/themes/*"]
     }
   },
   "include": ["src", "next-env.d.ts"],

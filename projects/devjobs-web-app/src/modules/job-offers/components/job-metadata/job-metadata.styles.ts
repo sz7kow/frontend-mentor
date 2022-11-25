@@ -1,20 +1,15 @@
 import styled from 'styled-components';
 
 export const Metadata = styled.div`
-  display: flex;
-  flex-direction: row;
-  column-gap: 0.75rem;
-  align-items: center;
-  line-height: ${({theme}) => theme.typography.body.lineHeightAlt};
-`;
+  &,
+  & > *:not(:last-child) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.75rem;
+    align-items: center;
+  }
 
-export const Contract = styled.span`
-  display: flex;
-  flex-direction: row;
-  column-gap: 0.75rem;
-  align-items: center;
-
-  ::before {
+  & > *:not(:last-child)::after {
     content: '';
     position: static;
     transform: translateY(0.25rem);

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import {createBreakpoint} from '~theming/utils/create-breakpoint';
+import {createBreakpoint} from 'themes/utils/create-breakpoint';
 
 export const Grid = styled.ul`
   display: grid;

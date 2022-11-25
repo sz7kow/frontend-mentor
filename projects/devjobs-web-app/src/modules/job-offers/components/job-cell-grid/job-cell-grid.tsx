@@ -1,5 +1,5 @@
-import {JobCell} from '~job-offers/components/job-cell';
-import {JobOffer} from '~job-offers/types/job-offer';
+import {JobCell} from 'job-offers/components/job-cell';
+import {JobOffer} from 'job-offers/types/job-offer';
 
 import * as S from './job-cell-grid.styles';
 

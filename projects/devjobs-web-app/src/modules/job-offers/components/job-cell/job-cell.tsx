@@ -1,9 +1,8 @@
-import React from 'react';
-
-import {EmployerLogo} from '~job-offers/components/employer-logo';
-import {JobLocation} from '~job-offers/components/job-location';
-import {JobMetadata} from '~job-offers/components/job-metadata';
-import {JobOffer} from '~job-offers/types/job-offer';
+import {EmployerLogo} from 'job-offers/components/employer-logo';
+import {JobLocation} from 'job-offers/components/job-location';
+import {JobMetadata} from 'job-offers/components/job-metadata';
+import {JobProperty} from 'job-offers/components/job-property';
+import {JobOffer} from 'job-offers/types/job-offer';
 
 import * as S from './job-cell.styles';
 
@@ -30,7 +29,7 @@ export const JobCell: React.FC<Props> = ({
       <div>
         <JobMetadata contract={contract} createdAt={createdAt} />
         <S.JobPositionLink href={`/job-offers/${id}`}>{position}</S.JobPositionLink>
-        <S.EmployerCompany>{company}</S.EmployerCompany>
+        <JobProperty>{company}</JobProperty>
       </div>
       <JobLocation>{location}</JobLocation>
     </S.CellInnerContainer>
