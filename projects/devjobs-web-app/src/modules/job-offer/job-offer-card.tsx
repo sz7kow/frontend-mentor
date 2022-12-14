@@ -26,7 +26,7 @@ export const JobOfferCard: React.FC<JobOffer> = ({
           <h1 className="mb-0.5 text-h3 tablet:mb-1 tablet:text-h1">{position}</h1>
           <p className="text-h4 text-indigo-700">{location}</p>
         </div>
-        <ButtonLink className="w-full" href={applyUrl}>
+        <ButtonLink className="w-full tablet:w-auto" href={applyUrl}>
           Apply Now
         </ButtonLink>
       </div>
