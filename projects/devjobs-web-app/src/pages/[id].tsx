@@ -1,45 +1,51 @@
-import {GetStaticPaths, GetStaticProps} from 'next';
+import {Company, JobOffer} from '@prisma/client';
+import {GetServerSideProps, NextPage} from 'next';
+import Head from 'next/head';
 import {Fragment} from 'react';
 
-import {Constrained} from 'common/components/constrained';
-import {EmployerCard} from 'job-offers/components/employer-card';
-import {JobDetailsCard} from 'job-offers/components/job-details-card';
-import {PageFooterApplyNow} from 'job-offers/components/page-footer-apply-now';
-import {PageHeader} from 'job-offers/components/page-header';
-import {JOB_OFFERS_SOURCE} from 'job-offers/constants/job-offers-source';
-import {JobOffer} from 'job-offers/types/job-offer';
+import {getSsgHelpers} from '~/app/get-ssg-helpers';
+import {Container} from '~/common/container';
+import {CompanyCard} from '~/company/company-card';
+import {JobOfferCard} from '~/job-offer/job-offer-card';
+import {PageFooter} from '~/job-offer/page-footer';
+import {PageLayout} from '~/job-offer/page-layout';
 
-import * as S from 'styles/pages/[id].styles';
-
-interface StaticProps {
-  jobOffer: JobOffer;
+interface ServerSideProps {
+  jobOffer: JobOffer & {company: Company};
 }
 
-interface Props extends StaticProps {}
+type QueryParams = {
+  id: string;
+};
 
-export const getStaticPaths: GetStaticPaths = () => ({
-  paths: JOB_OFFERS_SOURCE.map(({id}) => ({params: {id}})),
-  fallback: false,
-});
+export const getServerSideProps: GetServerSideProps<ServerSideProps, QueryParams> = async (context) => {
+  const id = context.params?.id as string;
 
-export const getStaticProps: GetStaticProps<StaticProps, {id: string}> = context => ({
-  props: {
-    jobOffer: JOB_OFFERS_SOURCE.filter(jobOffers => jobOffers.id === context.params?.id)[0],
-  },
-});
+  const ssgHelpers = await getSsgHelpers();
+  const jobOffer = await ssgHelpers.jobOffer.getOne.fetch({id});
 
-const JobOfferPage: React.FC<Props> = ({jobOffer: {employer, details, metadata}}) => (
+  if (!jobOffer) return {redirect: {destination: '/404', permanent: false}};
+
+  return {props: {jobOffer}};
+};
+
+const JobOfferPage: NextPage<ServerSideProps> = ({jobOffer}) => (
   <Fragment>
-    <PageHeader />
-    <S.PageOuterContainer>
-      <Constrained as="main" size="medium">
-        <S.PageInnerContainer>
-          <EmployerCard employer={employer} />
-          <JobDetailsCard createdAt={metadata.createdAt} details={details} />
-        </S.PageInnerContainer>
-      </Constrained>
-      <PageFooterApplyNow applyUrl={details.applyUrl} company={employer.company} position={details.position} />
-    </S.PageOuterContainer>
+    <Head>
+      <title>{`${jobOffer.position} | DevJobs Web App`}</title>
+      <meta key="description" content={jobOffer.description} property="og:description" />
+    </Head>
+    <PageLayout>
+      <div className="flex h-full flex-col gap-y-16 tablet:gap-y-13.25 desktop:gap-y-20">
+        <main className="grow">
+          <Container className="flex flex-col gap-y-5.75 pt-6.25 tablet:gap-y-8 tablet:pt-0" size="medium">
+            <CompanyCard {...jobOffer.company} />
+            <JobOfferCard {...jobOffer} />
+          </Container>
+        </main>
+        <PageFooter applyUrl={jobOffer.applyUrl} companyName={jobOffer.company.name} position={jobOffer.position} />
+      </div>
+    </PageLayout>
   </Fragment>
 );
 

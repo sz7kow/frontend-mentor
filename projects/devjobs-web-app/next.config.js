@@ -1,17 +1,14 @@
-/** @typedef {import('next').NextConfig} NextConfig */
-
-/** @type NextConfig */
+/** @type {import("next").NextConfig} */
 const nextConfig = {
-  compiler: {
-    styledComponents: {
-      displayName: false,
-      ssr: true,
-      fileName: true,
-      topLevelImportPaths: [],
-      meaninglessFileNames: ['index'],
-      cssProp: true,
-      namespace: undefined,
-    },
+  distDir: 'build',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+  images: {
+    dangerouslyAllowSVG: true,
+    deviceSizes: [375, 768, 1440],
+    domains: ['drive.google.com'],
   },
   reactStrictMode: true,
   swcMinify: true,

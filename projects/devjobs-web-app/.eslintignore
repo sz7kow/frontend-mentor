@@ -3,12 +3,16 @@
 # Dependencies
 node_modules
 
+# Prisma
+prisma
+
 # Misc
 .DS_Store
 .pem
 
 # Config
-next.config.js
+*.config.js
+*rc.js
 
 # Testing
 coverage
