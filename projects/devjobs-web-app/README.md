@@ -31,7 +31,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Link]()
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/devjobs-web-app-TyR7A4sCql)
 - Live Site URL: [Link](https://devjobs-web-app.sz7kow.com/)
 
 ## My process

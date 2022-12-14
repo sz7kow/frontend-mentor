@@ -18,6 +18,7 @@ A collection of solutions to the Frontend Mentor challenges.
 3. Intermediate
    - [Chat app CSS illustration](https://github.com/sz7kow/frontend-mentor/tree/master/projects/chat-app-css-illustration)
 4. Advanced
+   - [Devjobs web app](https://github.com/sz7kow/frontend-mentor/tree/master/projects/devjobs-web-app)
 5. Guru
 
 ## Author
