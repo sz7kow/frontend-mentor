@@ -19,7 +19,7 @@ const InternalErrorPage: React.FC = () => (
     <PageLayout>
       <main className="pb-8">
         <Container size="small">
-          <Card className="flex flex-col gap-y-10 p-6">
+          <Card className="flex flex-col items-start gap-y-10 p-6">
             <div className="text-center tablet:text-left">
               <h1 className="mb-3 text-h3 tablet:text-h2">500 - Internal Server Error</h1>
               <p>Sorry, this is not working properly. We now know about this mistake and are working to fix it.</p>

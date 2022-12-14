@@ -15,7 +15,7 @@ const NotFoundPage: React.FC = () => (
     <PageLayout>
       <main className="pb-8">
         <Container size="small">
-          <Card className="flex flex-col gap-y-10 p-6">
+          <Card className="flex flex-col items-start gap-y-10 p-6">
             <div className="text-center tablet:text-left">
               <h1 className="mb-3 text-h3 tablet:text-h2">404 - Not Found</h1>
               <p>This is not the web page you are looking for.</p>
