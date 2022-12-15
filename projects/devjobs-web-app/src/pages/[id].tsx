@@ -8,7 +8,6 @@ import {Container} from '~/common/container';
 import {CompanyCard} from '~/company/company-card';
 import {JobOfferCard} from '~/job-offer/job-offer-card';
 import {PageFooter} from '~/job-offer/page-footer';
-import {PageLayout} from '~/job-offer/page-layout';
 
 interface ServerSideProps {
   jobOffer: JobOffer & {company: Company};
@@ -35,17 +34,15 @@ const JobOfferPage: NextPage<ServerSideProps> = ({jobOffer}) => (
       <title>{`${jobOffer.position} | DevJobs Web App`}</title>
       <meta key="description" content={jobOffer.description} property="og:description" />
     </Head>
-    <PageLayout>
-      <div className="flex h-full flex-col gap-y-16 tablet:gap-y-13.25 desktop:gap-y-20">
-        <main className="grow">
-          <Container className="flex flex-col gap-y-5.75 pt-6.25 tablet:gap-y-8 tablet:pt-0" size="medium">
-            <CompanyCard {...jobOffer.company} />
-            <JobOfferCard {...jobOffer} />
-          </Container>
-        </main>
-        <PageFooter applyUrl={jobOffer.applyUrl} companyName={jobOffer.company.name} position={jobOffer.position} />
-      </div>
-    </PageLayout>
+    <div className="flex h-full flex-col gap-y-16 tablet:gap-y-13.25 desktop:gap-y-20">
+      <main className="grow">
+        <Container className="flex flex-col gap-y-5.75 pt-6.25 tablet:gap-y-8 tablet:pt-0" size="medium">
+          <CompanyCard {...jobOffer.company} />
+          <JobOfferCard {...jobOffer} />
+        </Container>
+      </main>
+      <PageFooter applyUrl={jobOffer.applyUrl} companyName={jobOffer.company.name} position={jobOffer.position} />
+    </div>
   </Fragment>
 );
 

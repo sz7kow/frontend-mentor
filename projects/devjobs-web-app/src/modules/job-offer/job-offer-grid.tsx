@@ -52,7 +52,7 @@ export const JobOfferGrid: React.FC<Props> = ({jobOffers}) => (
               />
               <div className="mb-10 flex flex-col gap-y-3">
                 <JobOfferMetadata contract={contract} postedAtSlug={postedAtSlug} />
-                <Link href={id}>
+                <Link href={id} scroll={false}>
                   <h1 className="text-h3 hover:text-gray-700 tablet:overflow-hidden tablet:text-ellipsis tablet:whitespace-nowrap">
                     {position}
                   </h1>

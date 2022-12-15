@@ -8,7 +8,6 @@ import {useTrcp} from '~/app/trpc-next-instance';
 import {Button} from '~/common/button';
 import {Container} from '~/common/container';
 import {JobOfferGrid} from '~/job-offer/job-offer-grid';
-import {PageLayout} from '~/job-offer/page-layout';
 import {SearchBar} from '~/job-offer/search-bar';
 import {initialSearchValues, SearchValues} from '~/job-offer/search-form-config';
 
@@ -87,25 +86,23 @@ const JobOffersPage: NextPage<ServerSideProps> = ({jobOffers: initialJobOffers})
           property="og:description"
         />
       </Head>
-      <PageLayout>
-        <main>
-          <Container className="flex flex-col gap-y-14.25 tablet:gap-y-17.5 desktop:gap-y-26.25" size="large">
-            <SearchBar isLoading={isLoadingWithNewOptions} onSubmit={handleSearchValuesChange} />
-            <div>
-              <JobOfferGrid jobOffers={jobOffers} />
-              <div className="tablet:mb-15.26 mb-15.5 desktop:mb-26">
-                {hasMore && (
-                  <div className="mt-8 text-center tablet:mt-14">
-                    <Button isLoading={isLoadingMore} onClick={handleSearchMore}>
-                      Load More
-                    </Button>
-                  </div>
-                )}
-              </div>
+      <main>
+        <Container className="flex flex-col gap-y-14.25 tablet:gap-y-17.5 desktop:gap-y-26.25" size="large">
+          <SearchBar isLoading={isLoadingWithNewOptions} onSubmit={handleSearchValuesChange} />
+          <div>
+            <JobOfferGrid jobOffers={jobOffers} />
+            <div className="tablet:mb-15.26 mb-15.5 desktop:mb-26">
+              {hasMore && (
+                <div className="mt-8 text-center tablet:mt-14">
+                  <Button isLoading={isLoadingMore} onClick={handleSearchMore}>
+                    Load More
+                  </Button>
+                </div>
+              )}
             </div>
-          </Container>
-        </main>
-      </PageLayout>
+          </div>
+        </Container>
+      </main>
     </Fragment>
   );
 };
