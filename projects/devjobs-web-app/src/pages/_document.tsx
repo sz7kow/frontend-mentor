@@ -1,7 +1,7 @@
 import {Head, Html, Main, NextScript} from 'next/document';
 import Script from 'next/script';
 
-import {colorSchemePreferenceScript} from '~/theme/color-scheme-preference-script';
+import {themeInjectingScript} from '~/theme/theme-injecting-script';
 
 const Document: React.FC = () => (
   <Html>
@@ -17,7 +17,7 @@ const Document: React.FC = () => (
       <Main />
       <NextScript />
       <Script
-        dangerouslySetInnerHTML={{__html: colorSchemePreferenceScript}}
+        dangerouslySetInnerHTML={{__html: themeInjectingScript}}
         id="load-theme-preference"
         strategy="afterInteractive"
       />

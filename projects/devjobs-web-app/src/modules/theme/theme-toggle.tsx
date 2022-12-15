@@ -1,15 +1,15 @@
 import Image from 'next/image';
 
-import {useColorSchemePreferenceContext} from './color-scheme-preference-context';
+import {useThemeContext} from './theme-context';
 
-export const ColorSchemePreferenceToggle: React.FC = () => {
-  const {prefersDarkScheme, toggleColorScheme} = useColorSchemePreferenceContext();
+export const ThemeToggle: React.FC = () => {
+  const {isDarkMode, toggleColorScheme} = useThemeContext();
 
   return (
     <label className="group flex min-w-fit cursor-pointer items-center gap-x-4 py-1">
       <Image alt="Light mode" height={20} src="/svgs/icon-sun.svg" width={20} />
       <input
-        checked={prefersDarkScheme !== undefined ? prefersDarkScheme : false}
+        checked={isDarkMode !== undefined ? isDarkMode : false}
         className="peer sr-only"
         onChange={toggleColorScheme}
         type="checkbox"
