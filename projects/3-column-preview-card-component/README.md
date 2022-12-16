@@ -23,7 +23,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshots/screenshot-3-column-preview-card-component.jpg)
+<img src="./screenshots/screenshot-3-column-preview-card-component.jpg" width="500" />
 
 ### Links
 
