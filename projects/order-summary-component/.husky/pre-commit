@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# --------------------------------- IMPORTANT --------------------------------
+# lint-staged goes into an infinite loop for unknown reason.
+# The following line fixed the issue: 
+exec >/dev/tty 2>&1
+
+# --------------------------------- IMPORTANT --------------------------------
+# Because this repository is a collection of separate projects,
+# husky's script are being run from root directory,
+# rather than from particular's project's directory. 
+#
+# Manual directory change is necessary to make eslint and typescript
+# work correctly.
+cd ./projects/order-summary-component
+
+npx lint-staged

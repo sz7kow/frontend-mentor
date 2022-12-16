@@ -9,6 +9,7 @@
     "./projects/3-column-preview-card-component",
     "./projects/chat-app-css-illustration",
     "./projects/devjobs-web-app",
+    "./projects/order-summary-component",
     "./projects/testimonials-grid-section"
   ]
 }
