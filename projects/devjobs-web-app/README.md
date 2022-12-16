@@ -27,7 +27,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshots/screenshot-devjobs-web-app.jpg)
+<img src="./screenshots/screenshot-devjobs-web-app.jpg" width="500" />
 
 ### Links
 
