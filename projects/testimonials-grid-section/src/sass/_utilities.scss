@@ -1,0 +1,60 @@
+.u-bc-dark-gunmetal {
+  background-color: $color-dark-gunmetal !important;
+}
+
+.u-bc-independence {
+  background-color: $color-independence !important;
+}
+
+.u-bc-slate-blue {
+  background-color: $color-slate-blue !important;
+}
+
+.u-bc-white {
+  background-color: $color-white !important;
+}
+
+.u-tc-anti-flash-white {
+  color: $color-anti-flash-white !important;
+}
+
+.u-tc-american-silver {
+  color: $color-american-silver !important;
+}
+
+.u-tc-independence {
+  color: $color-independence !important;
+}
+
+.u-tc-white {
+  color: $color-white !important;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.u-mb-16--mobile {
+  @media (max-width: ($breakpoint-desktop - 1px)) {
+    margin-bottom: 16px !important;
+  }
+}
+
+.u-mb-16--desktop {
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 16px !important;
+  }
+}
+
+.u-mb-24--desktop {
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 24px !important;
+  }
+}
+
+.u-mb-40--mobile {
+  @media (max-width: ($breakpoint-desktop - 1px)) {
+    margin-bottom: 40px !important;
+  }
+}
+

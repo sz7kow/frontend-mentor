@@ -8,6 +8,7 @@
   "eslint.workingDirectories": [
     "./projects/3-column-preview-card-component",
     "./projects/chat-app-css-illustration",
-    "./projects/devjobs-web-app"
+    "./projects/devjobs-web-app",
+    "./projects/testimonials-grid-section"
   ]
 }

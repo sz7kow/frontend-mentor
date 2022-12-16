@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+  padding: 71px 24px;
+  background-color: $color-anti-flash-white;
+  @media (min-width: $breakpoint-desktop) {
+    padding: 164px 150px;
+  }
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
