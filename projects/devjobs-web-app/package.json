@@ -1,5 +1,6 @@
 {
   "name": "devjobs-web-app",
+  "description": "This is a solution to the 'Devjobs web app' challenge.",
   "version": "0.1.0",
   "private": true,
   "author": {
