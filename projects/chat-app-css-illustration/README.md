@@ -23,7 +23,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshots/screenshot-chat-app-css-illustration.jpg)
+<img src="./screenshots/screenshot-chat-app-css-illustration.jpg" width="500" />
 
 ### Links
 
