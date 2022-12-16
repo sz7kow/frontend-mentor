@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  padding: 74px 24px 81px;
+  background: $color-anti-flash-white;
+  @media (min-width: $breakpoint-tablet) {
+    padding: 260px 24px;
+  }
+}

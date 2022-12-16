@@ -1,0 +1,11 @@
+.l-tooltip-container--mobile {
+  @media (max-width: ($breakpoint-tablet - 1px)) {
+    position: relative;
+  }
+}
+
+.l-tooltip-container--tablet-up {
+  @media (min-width: $breakpoint-tablet) {
+    position: relative;
+  }
+}

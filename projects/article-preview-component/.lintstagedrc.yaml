@@ -1,0 +1,2 @@
+'*.{html,md,scss,js,yaml,yml}':
+  - 'prettier --write'
