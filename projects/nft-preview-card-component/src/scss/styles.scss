@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$breakpoint-desktop: 69.375rem;
+
+$color-aqua: #00fff8;
+$color-black: #000000;
+$color-charcoal: #2e405a;
+$color-dark-jungle-green: #0d192c;
+$color-light-cobalt-blue: #8bacd9;
+$color-white: #ffffff;
+$color-yankees-blue: #15263f;
+
+$font-family: 'Outfit', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  padding: 3.875rem 1.5rem;
+  background-color: $color-dark-jungle-green;
+  @media (min-width: $breakpoint-desktop) {
+    padding: 9.5rem 1.5rem;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 21.875rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 0.9375rem;
+  background-color: $color-yankees-blue;
+  box-shadow: 0rem 1.5625rem 3.125rem rgba($color-black, 0.0952917);
+  @media (min-width: $breakpoint-desktop) {
+    padding: 1.5rem 1.5rem 2rem;
+  }
+}
+
+.card__img-container {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  &:hover::after {
+    opacity: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($color-aqua, 0.5) url('../svgs/icon-view.svg') no-repeat center;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+  }
+}
+
+.card__img {
+  display: block;
+  max-width: 100%;
+}
+
+.card__heading {
+  font: 600 1.375rem/1.75rem $font-family;
+  margin: 1.5rem 0 0.75rem;
+  color: $color-white;
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 1rem;
+  }
+}
+
+.card__desc {
+  font: 300 1.125rem/1.625rem $font-family;
+  margin-bottom: 1rem;
+  color: $color-light-cobalt-blue;
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.card__wallet-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__balance,
+.card__timer,
+.card__user {
+  font: 400 0.9375rem/1.1875rem $font-family;
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.card__balance {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: $color-aqua;
+  &::before {
+    content: '';
+    width: 0.6875rem;
+    height: 1.125rem;
+    margin-right: 0.40625rem;
+    background-image: url('../svgs/icon-ethereum.svg');
+  }
+}
+
+.card__timer {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5625rem;
+    background-image: url('../svgs/icon-clock.svg');
+  }
+}
+
+.card__timer {
+  color: $color-light-cobalt-blue;
+}
+
+.card__divider {
+  height: 0.0625rem;
+  margin: 1rem 0;
+  background-color: $color-charcoal;
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 1.5rem;
+  }
+}
+
+.card__user-details-container {
+  display: flex;
+  align-items: center;
+}
+
+.card__user-avatar {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  margin-right: 1rem;
+  border: 0.0625rem solid $color-white;
+  border-radius: 50%;
+}
+
+.card__user {
+  color: $color-light-cobalt-blue;
+}
+
+.card__user-link {
+  text-decoration: none;
+  color: $color-white;
+  cursor: pointer;
+  &:hover {
+    color: $color-aqua;
+  }
+}
