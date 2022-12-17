@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import {PrismaClient} from '@prisma/client';
 
 import {companies} from './constants/companies';

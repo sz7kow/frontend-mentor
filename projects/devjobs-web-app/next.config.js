@@ -1,4 +1,10 @@
-/** @type {import("next").NextConfig} */
+// @ts-check
+
+/**
+ * @typedef {import('next').NextConfig} NextConfig
+ */
+
+/** @type {NextConfig} */
 const nextConfig = {
   distDir: 'build',
   i18n: {

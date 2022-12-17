@@ -1,6 +1,18 @@
+// @ts-check
 const defaultTheme = require('tailwindcss/defaultTheme');
 
+/**
+ * @typedef {import('tailwindcss').Config} TailwindConfig
+ * @typedef {Object.<number, string>} Spacing
+ */
+
+/**
+ * @param {number} minValue
+ * @param {number} maxValue
+ * @returns {Spacing}
+ */
 function createSpacing(minValue, maxValue) {
+  /** @type {Spacing} */
   const spacing = {};
   for (let value = minValue; value <= maxValue; value++) {
     spacing[value / 4] = `${value / 16}rem`;
@@ -8,7 +20,7 @@ function createSpacing(minValue, maxValue) {
   return spacing;
 }
 
-/** @type {import('tailwindcss').Config} */
+/** @type {TailwindConfig} */
 module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
   darkMode: 'class',

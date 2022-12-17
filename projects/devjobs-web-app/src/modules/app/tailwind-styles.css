@@ -1,7 +1,8 @@
 @tailwind base;
 
-/* prettier-ignore */
-html, body, #__next {
+html,
+body,
+#__next {
   @apply h-full;
 }
 
@@ -16,8 +17,10 @@ body {
   margin-right: calc(-1 * (100vw - 100%));
 }
 
-/* prettier-ignore */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   @apply text-stale-900 transition-colors dark:text-white;
 }
 
