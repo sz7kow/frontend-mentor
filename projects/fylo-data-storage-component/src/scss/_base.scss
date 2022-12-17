@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  padding: 7.9375rem 1.53125rem;
+  background: url('../images/pattern-bg-mobile.png') no-repeat center;
+  background-size: cover;
+  background-color: $color-maastricht-blue;
+  @media (min-width: $breakpoint-tablet) {
+    padding: 18.0625rem 1.53125rem 19.375rem;
+    background: url('../images/pattern-bg-tablet.png') no-repeat center bottom;
+    background-size: 100% 420px;
+    background-color: $color-maastricht-blue-2;
+  }
+}

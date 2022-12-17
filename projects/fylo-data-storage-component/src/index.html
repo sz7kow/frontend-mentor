@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a solution to the 'Fylo data storage component' challenge." />
+    <link href="./scss/styles.scss" rel="stylesheet" />
+    <link href="./images/avatar-sz7kow.png" rel="shortcut icon" type="image/x-icon" />
+    <title>Fylo data storage component</title>
+  </head>
+  <body>
+    <main class="card-group">
+      <div class="control-card">
+        <img alt="Logo" src="./svgs/logo.svg" width="135" height="40" />
+        <div class="icon-button-group">
+          <button class="icon-button" aria-label="File">
+            <img alt="" src="./svgs/icon-document.svg" width="19" height="24" />
+          </button>
+          <button class="icon-button" aria-label="Folder">
+            <img alt="" src="./svgs/icon-folder.svg" width="24" height="19" />
+          </button>
+          <button class="icon-button" aria-label="Upload">
+            <img alt="" src="./svgs/icon-upload.svg" width="24" height="16" />
+          </button>
+        </div>
+      </div>
+      <div class="usage-card">
+        <div class="storage-left">
+          <span class="storage-left__value">185</span>
+          <span class="storage-left__label">GB left</span>
+        </div>
+        <h1 class="usage-card__heading">You’ve used <b>815 GB</b> of your storage</h1>
+        <div class="progress-bar">
+          <div class="progress-bar__bar-container">
+            <div class="progress-bar__bar"></div>
+          </div>
+          <div class="progress-bar__extremes-container">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

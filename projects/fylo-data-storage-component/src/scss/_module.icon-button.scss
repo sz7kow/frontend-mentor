@@ -1,0 +1,20 @@
+.icon-button-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.75rem;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.625rem;
+  background-color: $color-maastricht-blue-2;
+}
+
+.icon-button + .icon-button {
+  margin-left: 1rem;
+}
