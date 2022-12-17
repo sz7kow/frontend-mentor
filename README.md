@@ -18,6 +18,7 @@ A collection of solutions to the Frontend Mentor challenges.
    - [Order summary component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/order-summary-component)
 2. Junior
    - [Testimonials grid section](https://github.com/sz7kow/frontend-mentor/tree/master/projects/testimonials-grid-section)
+   - [Typemaster pre-launch landing page](https://github.com/sz7kow/frontend-mentor/tree/master/projects/typemaster-pre-launch-landing-page)
 3. Intermediate
    - [Chat app CSS illustration](https://github.com/sz7kow/frontend-mentor/tree/master/projects/chat-app-css-illustration)
 4. Advanced

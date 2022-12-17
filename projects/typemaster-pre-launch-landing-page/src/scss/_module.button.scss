@@ -1,0 +1,40 @@
+.button {
+  font: 700 1rem/1.625rem $font-family;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.button--primary,
+.button-secondary {
+  width: 9.375rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  @media (min-width: $breakpoint-tablet) {
+    width: 10.9375rem;
+    height: 3.625rem;
+  }
+}
+
+.button--primary {
+  color: $color-white;
+  background-color: $color-halloween-orange;
+  &:hover {
+    background-color: $color-atomic-tangerine;
+  }
+}
+
+.button-secondary {
+  color: $color-yankees-blue;
+  background-color: $color-bright-gray;
+  &:hover {
+    color: $color-white;
+    background-color: $color-yankees-blue;
+  }
+}
+
+.button--tertiary {
+  color: $color-shadow-blue;
+  background: none;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  font: 500 1rem/1.625rem $font-family;
+  color: $color-shadow-blue;
+  background-color: $color-white;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  color: $color-yankees-blue;
+}
+
+h1 {
+  font: 900 3rem/100% $font-family;
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font: 900 2rem/2.25rem $font-family;
+}
+
+h3 {
+  font: 900 1.5rem/1.75rem $font-family;
+}

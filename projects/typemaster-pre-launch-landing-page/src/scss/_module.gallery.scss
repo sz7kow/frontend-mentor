@@ -1,0 +1,143 @@
+$image-height-mobile: 12.0625rem;
+$image-height-tablet: 20rem;
+$image-height-desktop: 30rem;
+
+.gallery {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 6.9375rem;
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 8.875rem;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 10.5rem;
+  }
+}
+
+.gallery::after {
+  @media (min-width: $breakpoint-desktop) {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15.9375rem;
+    height: 15rem;
+    border-radius: 1.25rem;
+    background: $color-bright-gray;
+    transform: translateX(-50%);
+  }
+}
+
+.gallery__inner-container {
+  padding-top: 4.6875rem + $image-height-mobile;
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.gallery__img-container {
+  position: absolute;
+  top: 0;
+  right: $vertical-padding-mobile;
+  left: -1.375rem;
+  display: flex;
+  flex-direction: row-reverse;
+  height: $image-height-mobile;
+  @media (min-width: $breakpoint-tablet) {
+    position: static;
+    height: $image-height-tablet;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    height: $image-height-desktop;
+    margin-right: 7.8125rem;
+    flex-grow: 1;
+  }
+}
+
+.gallery__primary-img-container,
+.gallery__secondary-img-container {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 1.25rem;
+}
+
+.gallery__primary-img-container {
+  flex-grow: 1;
+  background: $color-bright-gray url('../images/mobile-image-glass-and-keyboard.jpg') no-repeat center;
+  background-size: cover;
+  @media (min-width: $breakpoint-tablet) {
+    background-image: url('../images/tablet-image-glass-and-keyboard.jpg');
+  }
+  @media (min-width: $breakpoint-desktop) {
+    background-image: url('../images/desktop-image-glass-and-keyboard.jpg');
+  }
+}
+
+.gallery__secondary-img-container {
+  position: relative;
+  width: 8.0625rem;
+  margin-right: 1.5rem;
+  background: $color-bright-gray url('../images/mobile-image-phone-and-keyboard.jpg') no-repeat center;
+  background-size: 100%;
+  @media (min-width: $breakpoint-tablet) {
+    width: 13.375rem;
+    margin-right: 1.875rem;
+    background-image: url('../images/tablet-image-phone-and-keyboard.jpg');
+  }
+  @media (min-width: $breakpoint-desktop) {
+    width: 15.9375rem;
+    background-image: url('../images/desktop-image-phone-and-keyboard.jpg');
+  }
+}
+
+.gallery__secondary-img-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color-halloween-orange, 0.95);
+  mix-blend-mode: multiply;
+}
+
+.gallery__content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+    text-align: left;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: column;
+    width: 15.9375rem;
+    padding-top: 7rem;
+  }
+}
+
+.gallery__heading {
+  margin-bottom: 1.5rem;
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 15.9375rem;
+    margin-bottom: 0;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 1.6875rem;
+  }
+}
+
+.gallery__content {
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 24.875rem;
+  }
+}

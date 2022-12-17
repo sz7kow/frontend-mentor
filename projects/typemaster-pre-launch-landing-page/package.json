@@ -1,0 +1,30 @@
+{
+  "name": "typemaster-pre-launch-landing-page",
+  "description": "This is a solution to the 'Typemaster pre-launch landing page' challenge.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Szymon Kowalski",
+    "email": "sz7kow@gmail.com",
+    "url": "https://github.com/sz7kow"
+  },
+  "homepage": "https://typemaster-pre-launch-landing-page.sz7kow.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sz7kow/frontend-mentor.git"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html --dist-dir build",
+    "dev": "parcel src/index.html --dist-dir build",
+    "format": "prettier --write .",
+    "prepare": "cd ../.. && husky install ./projects/typemaster-pre-launch-landing-page/.husky"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.2",
+    "husky": "8.0.2",
+    "lint-staged": "13.1.0",
+    "parcel": "2.8.2",
+    "prettier": "2.8.1"
+  },
+  "license": "MIT"
+}
+

@@ -1,0 +1,36 @@
+.feature {
+  width: 100%;
+  max-width: 20.625rem;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-tablet) {
+    text-align: left;
+  }
+}
+
+.feature__icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  background-color: $color-halloween-orange;
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 2.5rem;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    margin-bottom: 3rem;
+  }
+}
+
+.feature__heading {
+  margin-bottom: 1.5rem;
+}
+
+.feature__content {
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 17.5625rem;
+  }
+}
