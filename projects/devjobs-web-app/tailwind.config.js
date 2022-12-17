@@ -76,9 +76,9 @@ module.exports = {
       6: '2.1875rem',
     },
     screens: {
-      mobile: '375px',
-      tablet: '768px',
-      desktop: '1440px',
+      mobile: '23.4375rem',
+      tablet: '48rem',
+      desktop: '90rem',
     },
     spacing: createSpacing(0, 1440),
   },
