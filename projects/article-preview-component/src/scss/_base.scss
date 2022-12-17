@@ -8,9 +8,9 @@ p {
 }
 
 body {
-  padding: 74px 24px 81px;
+  padding: 4.625rem 1.5rem 5.0625rem;
   background: $color-anti-flash-white;
   @media (min-width: $breakpoint-tablet) {
-    padding: 260px 24px;
+    padding: 16.25rem 1.5rem;
   }
 }

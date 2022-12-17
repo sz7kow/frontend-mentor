@@ -2,56 +2,56 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 327px;
+  max-width: 20.4375rem;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: $color-white;
-  box-shadow: 0px 40px 40px -10px rgba($color-columbia-blue, 0.503415);
+  box-shadow: 0rem 2.5rem 2.5rem -0.625rem rgba($color-columbia-blue, 0.503415);
   @media (min-width: $breakpoint-tablet) {
     flex-direction: row;
-    max-width: 730px;
+    max-width: 45.625rem;
   }
 }
 
 .card__image {
   width: 100%;
-  height: 200px;
-  border-radius: 10px 10px 0 0;
+  height: 12.5rem;
+  border-radius: 0.625rem 0.625rem 0 0;
   @media (min-width: $breakpoint-tablet) {
-    width: 285px;
-    height: 280px;
-    border-radius: 10px 0 0 10px;
+    width: 17.8125rem;
+    height: 17.5rem;
+    border-radius: 0.625rem 0 0 0.625rem;
     object-fit: cover;
     object-position: left center;
   }
 }
 
 .card__content {
-  padding: 36px 32px 20px;
+  padding: 2.25rem 2rem 1.25rem;
   @media (min-width: $breakpoint-tablet) {
-    padding: 32px 40px;
+    padding: 2rem 2.5rem;
   }
 }
 
 .card__heading {
-  font: 700 16px/1.5 $font-family;
-  margin-bottom: 12px;
-  letter-spacing: 0.2px;
+  font: 700 1rem/1.5 $font-family;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.0125rem;
   color: $color-independence;
   @media (min-width: $breakpoint-tablet) {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.4;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.015625rem;
   }
 }
 
 .card__text {
-  font: 500 13px/20px $font-family;
-  margin-bottom: 52px;
-  letter-spacing: 0.121875px;
+  font: 500 0.8125rem/1.25rem $font-family;
+  margin-bottom: 3.25rem;
+  letter-spacing: 0.0076171875rem;
   color: $color-slate-gray;
   @media (min-width: $breakpoint-tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -59,27 +59,27 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 40px;
+  height: 2.5rem;
 }
 
 .card__avatar {
-  width: 40px;
-  height: 40px;
-  margin-right: 16px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
   border-radius: 50%;
 }
 
 .card__author-details {
   flex-grow: 1;
-  letter-spacing: 0.121875px;
+  letter-spacing: 0.0076171875rem;
 }
 
 .card__author-name {
-  font: 700 13px/20px $font-family;
+  font: 700 0.8125rem/1.25rem $font-family;
   color: $color-independence;
 }
 
 .card__date {
-  font: 500 13px/20px $font-family;
+  font: 500 0.8125rem/1.25rem $font-family;
   color: $color-cadet-blue;
 }
