@@ -23,6 +23,7 @@ A collection of solutions to the Frontend Mentor challenges.
    - [Typemaster pre-launch landing page](https://github.com/sz7kow/frontend-mentor/tree/master/projects/typemaster-pre-launch-landing-page)
 3. Intermediate
    - [Chat app CSS illustration](https://github.com/sz7kow/frontend-mentor/tree/master/projects/chat-app-css-illustration)
+   - [Job listings with filtering](https://github.com/sz7kow/frontend-mentor/tree/master/projects/job-listings-with-filtering)
 4. Advanced
    - [Devjobs web app](https://github.com/sz7kow/frontend-mentor/tree/master/projects/devjobs-web-app)
 5. Guru

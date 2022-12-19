@@ -1,0 +1,34 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:jsx-a11y/recommended'
+  - 'plugin:react/recommended'
+  - 'airbnb'
+  - 'prettier'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: module
+plugins:
+  - 'import'
+  - 'jsx-a11y'
+  - 'react'
+  - 'react-hooks'
+rules:
+  # ---------------------------------- Eslint ---------------------------------- #
+  arrow-body-style: [1, 'as-needed']
+  sort-keys: 2
+  # ---------------------------------- Import ---------------------------------- #
+  import/no-default-export: 2
+  import/no-named-export: 0
+  import/no-unresolved: 0
+  import/prefer-default-export: 0
+  # ----------------------------------- React ---------------------------------- #
+  react/function-component-definition: [2, {namedComponents: 'arrow-function', unnamedComponents: 'arrow-function'}]
+  react/jsx-fragments: [2, 'element']
+  react/jsx-sort-props: 2
+  react/prop-types: 2
+  react/react-in-jsx-scope: 0
