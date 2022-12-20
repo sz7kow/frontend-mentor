@@ -20,6 +20,7 @@ A collection of solutions to the Frontend Mentor challenges.
    - [Single price grid component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/single-price-grid-component)
 2. Junior
    - [Fylo data storage component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/fylo-data-storage-component)
+   - [Social media dashboard with theme switcher](https://github.com/sz7kow/frontend-mentor/tree/master/projects/social-media-dashboard-with-theme-switcher)
    - [Testimonials grid section](https://github.com/sz7kow/frontend-mentor/tree/master/projects/testimonials-grid-section)
    - [Typemaster pre-launch landing page](https://github.com/sz7kow/frontend-mentor/tree/master/projects/typemaster-pre-launch-landing-page)
 3. Intermediate

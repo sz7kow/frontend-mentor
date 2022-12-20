@@ -15,6 +15,7 @@
     "./projects/nft-preview-card-component",
     "./projects/order-summary-component",
     "./projects/single-price-grid-component",
+    "./projects/social-media-dashboard-with-theme-switcher",
     "./projects/testimonials-grid-section",
     "./projects/typemaster-pre-launch-landing-page"
   ]
