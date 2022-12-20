@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+exec >/dev/tty 2>&1
+cd ./projects/social-media-dashboard-with-theme-switcher
+
+npx lint-staged
