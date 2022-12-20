@@ -14,6 +14,7 @@
     "./projects/job-listings-with-filtering",
     "./projects/nft-preview-card-component",
     "./projects/order-summary-component",
+    "./projects/single-price-grid-component",
     "./projects/testimonials-grid-section",
     "./projects/typemaster-pre-launch-landing-page"
   ]

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$breakpoint-desktop: 90rem;
+
+$color-black: #000000;
+$color-bright-gray: #e6eff5;
+$color-cobalt-blue: #0051ab;
+$color-light-sea-green: #2ab3b1;
+$color-pear: #c0df33;
+$color-pewter-blue: #9aa7be;
+$color-white: #ffffff;
+
+$font-family: 'Karla', sans-serif;
+
+body {
+  padding: 4.5rem 2rem 3.875rem;
+  background-color: $color-bright-gray;
+  @media (min-width: $breakpoint-desktop) {
+    padding: 10.1875rem 2rem 10.125rem;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: 'main' 'price' 'features';
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  max-width: 19.4375rem;
+  margin: 0 auto;
+  border-radius: 0.3125rem;
+  background-color: $color-light-sea-green;
+  box-shadow: 0rem 0.9375rem 1.875rem rgba($color-cobalt-blue, 0.148847);
+  @media (min-width: $breakpoint-desktop) {
+    grid-template-areas: 'main main' 'price features';
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 13.5rem 16.1875rem;
+    max-width: 39.6875rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.card-main-container {
+  grid-area: main;
+  padding: 1.75rem 1.5rem 2rem;
+  background-color: $color-white;
+}
+
+.card-price-container {
+  grid-area: price;
+  padding: 1.5rem;
+}
+
+.card-features-container {
+  grid-area: features;
+  padding: 1.5rem;
+  background-color: rgba($color-white, 0.15);
+}
+
+.card-main-container,
+.card-price-container,
+.card-features-container {
+  @media (min-width: $breakpoint-desktop) {
+    padding: 2.5rem;
+  }
+}
+
+.card-heading {
+  font: 700 1.25rem/1.4375rem $font-family;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.015625rem;
+  color: $color-light-sea-green;
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.01875rem;
+  }
+}
+
+.card-subheading {
+  font: 700 0.9375rem/1.25rem $font-family;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01171875rem;
+  color: $color-pear;
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    margin-bottom: 0.6875rem;
+    letter-spacing: -0.0140625rem;
+  }
+}
+
+.card-content {
+  font: 400 0.875rem/1.625rem $font-family;
+  letter-spacing: -0.0109375rem;
+  color: $color-pewter-blue;
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 1rem;
+    letter-spacing: -0.0125rem;
+  }
+}
+
+.card-section-heading {
+  font: 700 1.125rem/1.3125rem $font-family;
+  margin-bottom: 1.125rem;
+  letter-spacing: -0.0140625rem;
+  color: $color-white;
+}
+
+.card-price {
+  font: 700 2rem/2.3125rem $font-family;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.025rem;
+  color: $color-white;
+}
+
+.card-duration {
+  font: 400 1rem/1.625rem $font-family;
+  margin-left: 0.6875rem;
+  letter-spacing: -0.0125rem;
+  opacity: 0.5;
+}
+
+.card-description {
+  font: 400 1rem/1.625rem $font-family;
+  display: inline-block;
+  margin-bottom: 1.625rem;
+  letter-spacing: -0.0125rem;
+  color: $color-white;
+}
+
+.card-button {
+  font: 700 1rem/1.1875rem $font-family;
+  width: 100%;
+  padding: 0.9375rem 0 0.875rem;
+  letter-spacing: -0.0125rem;
+  text-align: center;
+  color: $color-white;
+  border: none;
+  border-radius: 0.3125rem;
+  background: $color-pear;
+  box-shadow: 0rem 0.625rem 0.625rem rgba($color-black, 0.0973011);
+}
+
+.card-feature-item {
+  font: 400 0.875rem/1.25rem $font-family;
+  letter-spacing: -0.0109375rem;
+  color: $color-white;
+  opacity: 0.75;
+}
