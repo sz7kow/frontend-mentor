@@ -31,30 +31,29 @@
 }
 
 .u-mb-16 {
-  margin-bottom: 16px !important;
+  margin-bottom: 1rem !important;
 }
 
 .u-mb-16--mobile {
-  @media (max-width: ($breakpoint-desktop - 1px)) {
-    margin-bottom: 16px !important;
+  @media (max-width: ($breakpoint-desktop - 0.0625rem)) {
+    margin-bottom: 1rem !important;
   }
 }
 
 .u-mb-16--desktop {
   @media (min-width: $breakpoint-desktop) {
-    margin-bottom: 16px !important;
+    margin-bottom: 1rem !important;
   }
 }
 
 .u-mb-24--desktop {
   @media (min-width: $breakpoint-desktop) {
-    margin-bottom: 24px !important;
+    margin-bottom: 1.5rem !important;
   }
 }
 
 .u-mb-40--mobile {
-  @media (max-width: ($breakpoint-desktop - 1px)) {
-    margin-bottom: 40px !important;
+  @media (max-width: ($breakpoint-desktop - 0.0625rem)) {
+    margin-bottom: 2.5rem !important;
   }
 }
-
