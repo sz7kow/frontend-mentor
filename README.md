@@ -17,6 +17,7 @@ A collection of solutions to the Frontend Mentor challenges.
    - [Article preview component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/article-preview-component)
    - [NFT preview card component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/nft-preview-card-component)
    - [Order summary component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/order-summary-component)
+   - [QR code component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/qr-code-component)
    - [Single price grid component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/single-price-grid-component)
 2. Junior
    - [Fylo data storage component](https://github.com/sz7kow/frontend-mentor/tree/master/projects/fylo-data-storage-component)
