@@ -30,6 +30,7 @@ A collection of solutions to the Frontend Mentor challenges.
 4. Advanced
    - [Devjobs web app](https://github.com/sz7kow/frontend-mentor/tree/master/projects/devjobs-web-app)
 5. Guru
+   - [🏗️ Invoice App](https://github.com/sz7kow/frontend-mentor/tree/master/projects/invoice-app)
 
 ## Author
 
