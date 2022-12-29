@@ -1,3 +1,8 @@
 @tailwind base;
+
+body {
+  @apply text-default text-stale-500 dark:text-stale-300;
+}
+
 @tailwind components;
 @tailwind utilities;

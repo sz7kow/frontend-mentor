@@ -58,6 +58,14 @@ module.exports = {
     fontFamily: {
       sans: ['"Spartan"', ...defaultTheme.fontFamily.sans],
     },
+    fontSize: {
+      h1: ['2rem', {lineHeight: '2.25rem', letterSpacing: '-0.0625rem', fontWeight: '700'}],
+      h2: ['1.25rem', {lineHeight: '1.375rem', letterSpacing: '-0.039375rem', fontWeight: '700'}],
+      h3: ['1rem', {lineHeight: '1.5rem', letterSpacing: '-0.05rem', fontWeight: '700'}],
+      h4: ['0.75rem', {lineHeight: '0.9375rem', letterSpacing: '-0.015625rem', fontWeight: '700'}],
+      default: ['0.75rem', {lineHeight: '0.9375rem', letterSpacing: '-0.015625rem', fontWeight: '500'}],
+      alt: ['0.6875rem', {lineHeight: '1.125rem', letterSpacing: '-0.014375rem', fontWeight: '500'}],
+    },
     screens: {
       mobile: '23.4375rem',
       tablet: '48rem',
