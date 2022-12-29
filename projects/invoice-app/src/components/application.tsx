@@ -1,3 +1,1 @@
-export const Application: React.FC = () => {
-  return <div>Application</div>;
-};
+export const Application: React.FC = () => <div>Application</div>;
