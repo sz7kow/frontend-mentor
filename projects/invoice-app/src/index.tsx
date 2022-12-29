@@ -1,10 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-import { reportWebVitals } from "utils/report-web-vitals";
-import { Application } from "./components/application";
+import {Application} from 'components/application';
+import {reportWebVitals} from 'utils/report-web-vitals';
 
-const rootElement = document.getElementById("root") as HTMLElement;
+import 'css/tailwind.css';
+
+const rootElement = document.getElementById('react-root') as HTMLElement;
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(
