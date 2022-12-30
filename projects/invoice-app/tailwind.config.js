@@ -33,6 +33,12 @@ module.exports = {
         300: '#ff9797',
         500: '#ec5757',
       },
+      orange: {
+        400: '#ff8f00',
+      },
+      green: {
+        400: '#33d69f',
+      },
       violet: {
         500: '#9277ff',
         700: '#7c5dfa',
@@ -54,7 +60,6 @@ module.exports = {
         900: '#0c0e16',
       },
     },
-    extend: {},
     fontFamily: {
       sans: ['"Spartan"', ...defaultTheme.fontFamily.sans],
     },
@@ -72,6 +77,15 @@ module.exports = {
       desktop: '90rem',
     },
     spacing: createSpacing(0, 1440),
+    extend: {
+      backgroundColor: {
+        inherit: 'inherit',
+      },
+      content: {
+        bullet: '"\\2022"',
+        DEFAULT: "''",
+      },
+    },
   },
   plugins: [],
 };
